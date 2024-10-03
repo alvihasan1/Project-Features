@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(222, 250, 199);
+}
+
+.btn {
+  width: 200px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #6fd649;
+  border: none;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.popup {
+  width: 400px;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px 30px 25px 30px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1); /*scale 0.1 will decrease its size*/
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  box-shadow: 2px 2px 5px black;
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  border: 2px solid #6fd649;
+}
+
+.popup button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  font-size: 22px;
+  font-weight: 800;
+  cursor: pointer;
+  background-color: #6fd649;
+  color: whitesmoke;
+}
+
+h2 {
+  margin-top: 50px;
+  font-size: xx-large;
+}
+
+.text {
+  font-size: 22px;
+  padding: 15px;
+}
+.open-popup {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  transition: transform 0.8s, top 0.8s;
+}
+/*  It is implemented by javascript */

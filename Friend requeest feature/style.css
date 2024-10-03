@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45vh;
+  height: 75vh;
+  background-color: cadetblue;
+  border-radius: 15px;
+}
+
+#card img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  padding: 15px;
+  border-radius: 35px;
+}
+
+#add {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  width: 35vh;
+  font-weight: 600;
+  background-color: lightgray;
+}
+#card h2 {
+  color: whitesmoke;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}

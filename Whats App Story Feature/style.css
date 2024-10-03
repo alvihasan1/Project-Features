@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: powderblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* body {
+  background-color: powderblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+#card {
+  width: 24%;
+  height: 500px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#story-head {
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid whitesmoke;
+  white-space: nowrap; /* 1- it will put all images in line, but images will overflow now */
+  overflow-x: auto; /* 2- it will end the overflow but create a scrollbar*/
+  padding: 15px;
+}
+
+#story-head::-webkit-scrollbar {
+  display: none; /* 3- it will hide the scrollbar*/
+}
+
+.stories {
+  width: 90px;
+  height: 90px;
+  white-space: nowrap;
+  border: 2px solid rgb(128, 250, 128);
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.stories img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position: center; */
+}
+
+#full-story {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: none;
+  position: absolute;
+}
